@@ -1,0 +1,11 @@
+.bundle-box {
+    background: linear-gradient(135deg, var(--light-pink), #fff);
+    border: 2px dashed var(--pink);
+    border-radius: 16px;
+    padding: 3rem;
+    text-align: center;
+}
+
+.bundle-text {
+    margin-bottom: 1.5rem;
+}

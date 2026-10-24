@@ -1,0 +1,84 @@
+:root {
+    --teal: #008080;
+    --turquoise: #40E0D0;
+    --pink: #FF69B4;
+    --light-pink: #FFF0F5;
+    --dark: #2F4F4F;
+    --white: #FFFFFF;
+    --gray: #F9F9F9;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--dark);
+    background-color: var(--white);
+    line-height: 1.6;
+}
+
+.btn {
+    background-color: var(--pink);
+    color: var(--white);
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 25px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.btn:hover {
+    background-color: #ff479c;
+    transform: translateY(-2px);
+}
+
+.btn-small {
+    padding: 0.5rem 1.25rem;
+    font-size: 0.9rem;
+}
+
+section {
+    padding: 4rem 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+section h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    color: var(--teal);
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.placeholder-img {
+    background-color: #ddd;
+    width: 100%;
+    height: 350px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #777;
+    font-style: italic;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+}

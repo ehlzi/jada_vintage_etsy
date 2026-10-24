@@ -1,0 +1,31 @@
+.shop-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.card {
+    background: var(--gray);
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #eee;
+    text-align: center;
+    padding-bottom: 1.5rem;
+}
+
+.card .placeholder-img {
+    height: 250px;
+    border-radius: 0;
+    margin-bottom: 1rem;
+}
+
+.card h4 {
+    margin-bottom: 0.5rem;
+    color: var(--dark);
+}
+
+.card .price {
+    color: var(--teal);
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
